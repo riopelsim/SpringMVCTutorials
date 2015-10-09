@@ -1,0 +1,6 @@
+Based on the tutorial on :
+
+http://www.journaldev.com/3531/spring-mvc-hibernate-mysql-integration-crud-example-tutorial
+
+You will need to run the SQL Script on your DB server and configure the datasource properly in the servlet-context.xml file.
+

@@ -1,0 +1,15 @@
+DROP database IF EXISTS TESTDB;
+
+create database TESTDB;
+
+CREATE TABLE IF NOT EXISTS testdb.PERSON 
+( ID INT(10) NOT NULL AUTO_INCREMENT
+, NAME VARCHAR(20) NOT NULL DEFAULT '' 
+, COUNTRY VARCHAR(20) NULL DEFAULT NULL 
+, CONSTRAINT PRIMARY KEY ( ID ) )
+ ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ 
+insert into testdb.person (NAME, COUNTRY) VALUES ('Simon', 'Canada');
+insert into testdb.person (NAME, COUNTRY) VALUES ('Victor', 'Canada');
+  
+SELECT * FROM testdb.PERSON;
